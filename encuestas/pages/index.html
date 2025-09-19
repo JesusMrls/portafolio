@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuestas - Portafolio</title>
+    <link rel="stylesheet" href="/encuestas/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Registro -->
+        <div id="registro">
+            <h2>Registro</h2>
+            <div class="form-group">
+                <label for="nombre">Ingresa tu nombre:</label>
+                <input type="text" id="nombre" placeholder="Tu nombre" required>
+            </div>
+            <button onclick="registrarUsuario()">Continuar</button>
+        </div>
+
+
+        <!-- Menú Encuestas -->
+        <div id="menu" class="hidden">
+            <h2>Bienvenido, <span id="usuarioNombre"></span></h2>
+            <h3>Elige una encuesta:</h3>
+            <div class="options">
+                <button onclick="mostrarEncuesta('deporte')">Deporte</button>
+                <button onclick="mostrarEncuesta('cultura')">Cultura</button>
+                <button onclick="mostrarEncuesta('musica')">Música</button>
+            </div>
+        </div>
+
+
+        <!-- Encuestas -->
+        <div id="encuesta" class="hidden">
+            <h2 id="tituloEncuesta"></h2>
+            <form id="formEncuesta"></form>
+            <button onclick="enviarEncuesta()">Enviar</button>
+        </div>
+
+
+        <!-- Mensaje Final -->
+        <div id="final" class="hidden">
+            <h2>¡Gracias por participar, <span id="finalNombre"></span>!</h2>
+            <p>Tu opinión es muy valiosa.</p>
+            <button onclick="volverMenu()">Volver al menú</button>
+        </div>
+    </div>
+
+
+    <script src="/encuestas/js/script.js"></script>
+</body>
+
+</html>

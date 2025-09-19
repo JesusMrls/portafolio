@@ -1,0 +1,12 @@
+.wide-column {
+    width: 100px;
+}
+
+.wider-column {
+    width: 150px;
+}
+
+.table thead {
+    background-color: #343a40;
+    color: #ffffff;
+}

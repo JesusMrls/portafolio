@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paquetes de Fotografía Profesional - MCLICK Studio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración para la nueva paleta de colores -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-dark': '#1f2937',
+                        'secondary-gold': '#CA8A04',
+                        'light-bg': '#f9fafb',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Fuente Inter de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <link rel="stylesheet" href="/fotografia/css/paquetes.css">
+</head>
+<body class="antialiased font-['Inter'] bg-light-bg text-gray-800">
+
+    <!-- Navegación -->
+    <header class="bg-white shadow-lg py-4 fixed w-full z-50 rounded-b-3xl">
+        <nav class="container mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-extrabold text-primary-dark">
+                MCLICK Studio
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html#servicios" class="text-gray-600 hover:text-secondary-gold font-medium transition duration-300">Servicios</a>
+                <a href="paquetes.html" class="text-secondary-gold font-medium transition duration-300">Paquetes</a>
+                <a href="index.html#portafolio" class="text-gray-600 hover:text-secondary-gold font-medium transition duration-300">Portafolio</a>
+                <a href="index.html#contacto" class="text-gray-600 hover:text-secondary-gold font-medium transition duration-300">Contacto</a>
+            </div>
+            <!-- Botón de menú móvil -->
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none text-primary-dark">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </nav>
+        <!-- Menú móvil (oculto por defecto) -->
+        <div id="mobile-menu" class="mobile-menu bg-white md:hidden rounded-b-3xl">
+            <a href="index.html#servicios" class="block py-4 px-6 text-primary-dark hover:bg-gray-100 border-b">Servicios</a>
+            <a href="paquetes.html" class="block py-4 px-6 text-primary-dark hover:bg-gray-100 border-b">Paquetes</a>
+            <a href="index.html#portafolio" class="block py-4 px-6 text-primary-dark hover:bg-gray-100 border-b">Portafolio</a>
+            <a href="index.html#contacto" class="block py-4 px-6 text-primary-dark hover:bg-gray-100">Contacto</a>
+        </div>
+    </header>
+
+    <!-- Sección de Paquetes -->
+    <section class="py-16 md:py-24">
+        <div class="container mx-auto px-6 text-center mt-16 md:mt-0">
+
+            <!-- Paquetes para Bodas -->
+            <h1 class="text-3xl md:text-4xl font-bold mb-4 text-primary-dark">Paquetes para Bodas</h1>
+            <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
+                Ofrecemos paquetes flexibles para adaptarnos a tus necesidades, sin importar el tamaño o tipo de evento.
+            </p>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+                <!-- Paquete Básico-Esencial -->
+                <div class="package-card">
+                    <h2 class="text-2xl font-bold text-primary-dark mb-2">Básico-Esencial</h2>
+                    <p class="text-2xl font-extrabold text-secondary-gold mb-6">$3,500 MXN</p>
+                    <p class="text-gray-600 mb-4">
+                        Ideal para ceremonias íntimas y eventos cortos que buscan capturar los momentos clave con una cobertura de alta calidad.
+                    </p>
+                    <p class="text-gray-700 mb-6">
+                        <span class="font-semibold">Cobertura:</span> 4 horas, terrestre
+                    </p>
+                    <ul class="space-y-4 w-full">
+                        <li class="list-item">
+                            <span class="check-icon"><i class="fas fa-check"></i></span>
+                            <span>30-50 fotos editadas, video resumen 2-3 min, entrega digital</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Paquete Intermedio -->
+                <div class="package-card">
+                    <h2 class="text-2xl font-bold text-primary-dark mb-2">Intermedio</h2>
+                    <p class="text-2xl font-extrabold text-secondary-gold mb-6">$6,000 MXN</p>
+                    <p class="text-gray-600 mb-4">
+                        La opción perfecta para una cobertura detallada del evento, incluyendo tomas espectaculares con dron para capturar la atmósfera completa.
+                    </p>
+                    <p class="text-gray-700 mb-6">
+                        <span class="font-semibold">Cobertura:</span> 6 horas, terrestre + drone
+                    </p>
+                    <ul class="space-y-4 w-full">
+                        <li class="list-item">
+                            <span class="check-icon"><i class="fas fa-check"></i></span>
+                            <span>60-80 fotos editadas, video 3-5 min, reel para redes, USB personalizado</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Paquete Premium -->
+                <div class="package-card">
+                    <h2 class="text-2xl font-bold text-primary-dark mb-2">Premium - "Cinematográfico"</h2>
+                    <p class="text-2xl font-extrabold text-secondary-gold mb-6">$9,500 MXN</p>
+                    <p class="text-gray-600 mb-4">
+                        El servicio más completo, pensado para contar la historia de tu día de forma cinematográfica. Incluye cobertura completa, tomas aéreas y un detrás de cámaras exclusivo.
+                    </p>
+                    <p class="text-gray-700 mb-6">
+                        <span class="font-semibold">Cobertura:</span> Cobertura completa, terrestre + drone + backstage
+                    </p>
+                    <ul class="space-y-4 w-full">
+                        <li class="list-item">
+                            <span class="check-icon"><i class="fas fa-check"></i></span>
+                            <span>100-150 fotos editadas, video 7-10 min, trailer para redes, sesión previa, USB de lujo, caja personalizada</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Paquetes para XV Años -->
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-primary-dark">Paquetes para XV Años</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+                <!-- Paquete Básico -->
+                <div class="package-card">
+                    <h2 class="text-2xl font-bold text-primary-dark mb-2">Básico</h2>
+                    <p class="text-2xl font-extrabold text-secondary-gold mb-6">$3,000 MXN</p>
+                    <p class="text-gray-600 mb-4">
+                        Perfecto para capturar los momentos esenciales de la fiesta, desde la ceremonia hasta el vals, con un toque profesional y emotivo.
+                    </p>
+                    <p class="text-gray-700 mb-6">
+                        <span class="font-semibold">Cobertura:</span> 4 horas, terrestre
+                    </p>
+                    <ul class="space-y-4 w-full">
+                        <li class="list-item">
+                            <span class="check-icon"><i class="fas fa-check"></i></span>
+                            <span>30-50 fotos editadas, video resumen 2-3 min, entrega digital</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Paquete Intermedio -->
+                <div class="package-card">
+                    <h2 class="text-2xl font-bold text-primary-dark mb-2">Intermedio</h2>
+                    <p class="text-2xl font-extrabold text-secondary-gold mb-6">$5,000 MXN</p>
+                    <p class="text-gray-600 mb-4">
+                        Ideal para quienes desean una cobertura más amplia, con la posibilidad de añadir tomas aéreas con dron para un resultado espectacular.
+                    </p>
+                    <p class="text-gray-700 mb-6">
+                        <span class="font-semibold">Cobertura:</span> 5 horas, terrestre + drone
+                    </p>
+                    <ul class="space-y-4 w-full">
+                        <li class="list-item">
+                            <span class="check-icon"><i class="fas fa-check"></i></span>
+                            <span>60-80 fotos editadas, video 3-5 min, reel para redes, USB personalizado</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Paquete Premium -->
+                <div class="package-card">
+                    <h2 class="text-2xl font-bold text-primary-dark mb-2">Premium</h2>
+                    <p class="text-2xl font-extrabold text-secondary-gold mb-6">$8,500 MXN</p>
+                    <p class="text-gray-600 mb-4">
+                        El paquete más completo para inmortalizar cada detalle de tu día. Incluye cobertura total, sesión previa, tomas aéreas y un recuerdo físico de lujo.
+                    </p>
+                    <p class="text-gray-700 mb-6">
+                        <span class="font-semibold">Cobertura:</span> Cobertura completa, terrestre + drone + backstage
+                    </p>
+                    <ul class="space-y-4 w-full">
+                        <li class="list-item">
+                            <span class="check-icon"><i class="fas fa-check"></i></span>
+                            <span>100-150 fotos editadas, video 7-10 min, trailer para redes, sesión previa (presentación de XV), USB de lujo, caja personalizada</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Paquetes para Eventos Corporativos / Empresariales -->
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-primary-dark">Paquetes para Eventos Corporativos / Empresariales</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+                <!-- Paquete Básico -->
+                <div class="package-card">
+                    <h2 class="text-2xl font-bold text-primary-dark mb-2">Básico</h2>
+                    <p class="text-2xl font-extrabold text-secondary-gold mb-6">$2,500 MXN</p>
+                    <p class="text-gray-600 mb-4">
+                        Diseñado para la cobertura esencial de eventos de empresa, conferencias o reuniones. Captura los momentos más importantes y la esencia del evento.
+                    </p>
+                    <p class="text-gray-700 mb-6">
+                        <span class="font-semibold">Cobertura:</span> 3 horas, terrestre
+                    </p>
+                    <ul class="space-y-4 w-full">
+                        <li class="list-item">
+                            <span class="check-icon"><i class="fas fa-check"></i></span>
+                            <span>20-30 fotos editadas, video resumen 1-2 min, entrega digital</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Paquete Intermedio -->
+                <div class="package-card">
+                    <h2 class="text-2xl font-bold text-primary-dark mb-2">Intermedio</h2>
+                    <p class="text-2xl font-extrabold text-secondary-gold mb-6">$4,500 MXN</p>
+                    <p class="text-gray-600 mb-4">
+                        Una opción ideal para una cobertura más completa de tu evento corporativo, incluyendo tomas dinámicas con drone que elevan la producción.
+                    </p>
+                    <p class="text-gray-700 mb-6">
+                        <span class="font-semibold">Cobertura:</span> 5 horas, terrestre + drone
+                    </p>
+                    <ul class="space-y-4 w-full">
+                        <li class="list-item">
+                            <span class="check-icon"><i class="fas fa-check"></i></span>
+                            <span>40-60 fotos editadas, video 2-3 min, USB personalizado</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Paquete Premium -->
+                <div class="package-card">
+                    <h2 class="text-2xl font-bold text-primary-dark mb-2">Premium</h2>
+                    <p class="text-2xl font-extrabold text-secondary-gold mb-6">$7,500 MXN</p>
+                    <p class="text-gray-600 mb-4">
+                        La solución definitiva para eventos empresariales de gran envergadura. Cobertura completa con tomas aéreas e incluye entrevistas a invitados para crear contenido de valor.
+                    </p>
+                    <p class="text-gray-700 mb-6">
+                        <span class="font-semibold">Cobertura:</span> Jornada completa, terrestre + drone
+                    </p>
+                    <ul class="space-y-4 w-full">
+                        <li class="list-item">
+                            <span class="check-icon"><i class="fas fa-check"></i></span>
+                            <span>80-100 fotos editadas, video 4-5 min, entrevistas a invitados, entrega en USB + enlace privado</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Paquetes para Eventos Deportivos o Culturales -->
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-primary-dark">Paquetes para Eventos Deportivos o Culturales</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+                <!-- Paquete Básico -->
+                <div class="package-card">
+                    <h2 class="text-2xl font-bold text-primary-dark mb-2">Básico</h2>
+                    <p class="text-2xl font-extrabold text-secondary-gold mb-6">$2,500 MXN</p>
+                    <p class="text-gray-600 mb-4">
+                        Cobertura esencial para capturar la emoción y la acción de cualquier evento deportivo o cultural, con un resumen dinámico y atractivo.
+                    </p>
+                    <p class="text-gray-700 mb-6">
+                        <span class="font-semibold">Cobertura:</span> 3 horas, terrestre
+                    </p>
+                    <ul class="space-y-4 w-full">
+                        <li class="list-item">
+                            <span class="check-icon"><i class="fas fa-check"></i></span>
+                            <span>20-30 fotos editadas, video resumen 1-2 min, entrega digital</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Paquete Intermedio -->
+                <div class="package-card">
+                    <h2 class="text-2xl font-bold text-primary-dark mb-2">Intermedio</h2>
+                    <p class="text-2xl font-extrabold text-secondary-gold mb-6">$4,500 MXN</p>
+                    <p class="text-gray-600 mb-4">
+                        Para una cobertura más profunda, este paquete incluye tomas con drone que capturan la escala y la energía del evento desde una perspectiva única.
+                    </p>
+                    <p class="text-gray-700 mb-6">
+                        <span class="font-semibold">Cobertura:</span> 5 horas, terrestre + drone
+                    </p>
+                    <ul class="space-y-4 w-full">
+                        <li class="list-item">
+                            <span class="check-icon"><i class="fas fa-check"></i></span>
+                            <span>40-60 fotos editadas, video 2-3 min, USB personalizado</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Paquete Premium -->
+                <div class="package-card">
+                    <h2 class="text-2xl font-bold text-primary-dark mb-2">Premium</h2>
+                    <p class="text-2xl font-extrabold text-secondary-gold mb-6">$7,500 MXN</p>
+                    <p class="text-gray-600 mb-4">
+                        Cobertura completa y cinematográfica con tomas aéreas. Incluye la opción de entrevistas y narración para contar una historia más rica y personal.
+                    </p>
+                    <p class="text-gray-700 mb-6">
+                        <span class="font-semibold">Cobertura:</span> Jornada completa, terrestre + drone
+                    </p>
+                    <ul class="space-y-4 w-full">
+                        <li class="list-item">
+                            <span class="check-icon"><i class="fas fa-check"></i></span>
+                            <span>80-100 fotos editadas, video 4-6 min, entrevistas y narración opcional, entrega en USB + enlace privado</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Paquetes para Promoción de Negocios -->
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-primary-dark">Paquetes para Promoción de Negocios</h2>
+            <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
+                Impulsa tu marca con contenido visual de alta calidad. Desde fotografías de producto hasta videos promocionales.
+            </p>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+                <!-- Paquete Básico Negocios -->
+                <div class="package-card">
+                    <h2 class="text-2xl font-bold text-primary-dark mb-2">Básico</h2>
+                    <p class="text-2xl font-extrabold text-secondary-gold mb-6">$2,000 MXN</p>
+                    <p class="text-gray-600 mb-4">
+                        Ideal para pequeños negocios que necesitan imágenes profesionales para sus redes sociales y página web, mostrando sus productos o servicios de manera atractiva.
+                    </p>
+                    <p class="text-gray-700 mb-6">
+                        <span class="font-semibold">Sesión:</span> 2 horas, en locación o estudio
+                    </p>
+                    <ul class="space-y-4 w-full">
+                        <li class="list-item">
+                            <span class="check-icon"><i class="fas fa-check"></i></span>
+                            <span>20 fotos editadas, video corto para redes sociales (30-60 seg)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Paquete Intermedio Negocios -->
+                <div class="package-card">
+                    <h2 class="text-2xl font-bold text-primary-dark mb-2">Intermedio</h2>
+                    <p class="text-2xl font-extrabold text-secondary-gold mb-6">$4,500 MXN</p>
+                    <p class="text-gray-600 mb-4">
+                        Para empresas que buscan una promoción más completa. Incluye una sesión de fotos y un video promocional que cuenta la historia de tu marca, ideal para campañas publicitarias.
+                    </p>
+                    <p class="text-gray-700 mb-6">
+                        <span class="font-semibold">Sesión:</span> 4 horas, en locación o estudio
+                    </p>
+                    <ul class="space-y-4 w-full">
+                        <li class="list-item">
+                            <span class="check-icon"><i class="fas fa-check"></i></span>
+                            <span>50 fotos editadas, video promocional de 1-2 min, tomas aéreas con dron</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Paquete Premium Negocios -->
+                <div class="package-card">
+                    <h2 class="text-2xl font-bold text-primary-dark mb-2">Premium</h2>
+                    <p class="text-2xl font-extrabold text-secondary-gold mb-6">$8,000 MXN</p>
+                    <p class="text-gray-600 mb-4">
+                        El paquete más avanzado para una estrategia de marketing visual integral. Cobertura completa con imágenes de alta calidad, video cinematográfico y contenido extra para redes.
+                    </p>
+                    <p class="text-gray-700 mb-6">
+                        <span class="font-semibold">Sesión:</span> Jornada completa, múltiples locaciones
+                    </p>
+                    <ul class="space-y-4 w-full">
+                        <li class="list-item">
+                            <span class="check-icon"><i class="fas fa-check"></i></span>
+                            <span>100+ fotos editadas, video cinematográfico de 3-5 min, mini-entrevistas, reels para redes</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Propuestas Extras -->
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-primary-dark">Extras</h2>
+            <div class="max-w-2xl mx-auto bg-white p-8 rounded-2xl shadow-xl">
+                <ul class="space-y-4 text-left text-gray-700">
+                    <li class="list-item">
+                        <span class="check-icon"><i class="fas fa-star"></i></span>
+                        <span>Álbum impreso profesional (desde $1,500 MXN)</span>
+                    </li>
+                    <li class="list-item">
+                        <span class="check-icon"><i class="fas fa-star"></i></span>
+                        <span>Sesión previa al evento (save the date / presentación) – $2,000 MXN</span>
+                    </li>
+                    <li class="list-item">
+                        <span class="check-icon"><i class="fas fa-star"></i></span>
+                        <span>Edición exprés para entregar teaser el mismo día – $1,500 MXN</span>
+                    </li>
+                    <li class="list-item">
+                        <span class="check-icon"><i class="fas fa-star"></i></span>
+                        <span>Cobertura con segundo videógrafo – $2,000 MXN</span>
+                    </li>
+                    <li class="list-item">
+                        <span class="check-icon"><i class="fas fa-star"></i></span>
+                        <span>Pantalla para proyecciones – desde $1,000 MXN</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer class="bg-primary-dark text-white py-8 mt-12 rounded-t-xl">
+        <div class="container mx-auto px-6 text-center text-sm">
+            <p>&copy; 2025 MCLICK Studio. Todos los derechos reservados.</p>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="text-gray-400 hover:text-white">Política de Privacidad</a>
+                <a href="#" class="text-gray-400 hover:text-white">Términos de Servicio</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript para el menú móvil
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('mobile-menu-open');
+                mobileMenu.classList.toggle('mobile-menu-closed');
+            });
+
+            // Cerrar menú móvil al hacer clic en un enlace
+            const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.remove('mobile-menu-open');
+                    mobileMenu.classList.add('mobile-menu-closed');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

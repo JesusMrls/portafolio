@@ -1,0 +1,90 @@
+/* Estilos generales del cuerpo */
+body {
+    background-color: var(--light-bg);
+    color: var(--primary-dark);
+    font-family: 'Inter', sans-serif;
+}
+
+/* Definición de variables de color de Tailwind */
+:root {
+    --primary-dark: #1f2937;
+    --secondary-gold: #CA8A04;
+    --light-bg: #f9fafb;
+}
+
+/* Estilo para la sección hero con imagen de fondo */
+.hero-section {
+    background-color: #1f2937; /* Placeholder de color de fondo */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Estilo para los botones principales */
+.btn-primary {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    background-color: var(--secondary-gold);
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+.btn-primary:hover {
+    background-color: #A17103; /* Tono más oscuro al pasar el ratón */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo para los botones secundarios */
+.btn-secondary {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    background-color: white;
+    color: var(--secondary-gold);
+    font-weight: 600;
+    border: 2px solid var(--secondary-gold);
+    transition: all 0.3s ease-in-out;
+}
+.btn-secondary:hover {
+    background-color: #FEF3C7; /* Tono más claro al pasar el ratón */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo para las tarjetas de servicio */
+.service-card {
+    background-color: #F3F4F6;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el menú móvil */
+.mobile-menu-closed {
+    display: none;
+    animation: fadeOut 0.3s forwards;
+}
+
+.mobile-menu-open {
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 0.3s forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; transform: translateY(0); }
+    to { opacity: 0; transform: translateY(-10px); }
+}

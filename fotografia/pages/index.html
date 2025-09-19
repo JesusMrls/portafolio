@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de Fotografía Profesional - MCLICK STUDIO</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración para la nueva paleta de colores -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-dark': '#1f2937',
+                        'secondary-gold': '#CA8A04',
+                        'light-bg': '#f9fafb',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Enlace a tu archivo CSS personalizado -->
+    <link rel="stylesheet" href="/fotografia/css/styles.css">
+    <!-- Fuente Inter de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="antialiased font-['Inter'] bg-light-bg text-gray-800">
+
+    <!-- Navegación -->
+    <header class="bg-white shadow-lg py-4 fixed w-full z-50 rounded-b-3xl">
+        <nav class="container mx-auto px-6 flex justify-between items-center">
+            <a href="#" class="text-3xl font-extrabold text-primary-dark">
+                MCLICK  Studio
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#servicios" class="text-gray-600 hover:text-secondary-gold font-medium transition duration-300">Servicios</a>
+                <a href="paquetes.html" class="text-gray-600 hover:text-secondary-gold font-medium transition duration-300">Paquetes</a>
+                <a href="#portafolio" class="text-gray-600 hover:text-secondary-gold font-medium transition duration-300">Portafolio</a>
+                <a href="#contacto" class="text-gray-600 hover:text-secondary-gold font-medium transition duration-300">Contacto</a>
+            </div>
+            <!-- Botón de menú móvil -->
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none text-primary-dark">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </nav>
+        <!-- Menú móvil (oculto por defecto) -->
+        <div id="mobile-menu" class="mobile-menu bg-white md:hidden rounded-b-3xl">
+            <a href="#servicios" class="block py-4 px-6 text-primary-dark hover:bg-gray-100 border-b">Servicios</a>
+            <a href="paquetes.html" class="block py-4 px-6 text-primary-dark hover:bg-gray-100 border-b">Paquetes</a>
+            <a href="#portafolio" class="block py-4 px-6 text-primary-dark hover:bg-gray-100 border-b">Portafolio</a>
+            <a href="#contacto" class="block py-4 px-6 text-primary-dark hover:bg-gray-100">Contacto</a>
+        </div>
+    </header>
+
+    <!-- Sección Hero -->
+    <section class="hero-section text-white py-24 md:py-32 flex items-center justify-center text-center rounded-b-[4rem] shadow-xl relative mt-16 md:mt-0">
+        <!-- Contenedor para la imagen de fondo y el overlay -->
+        <div class="absolute inset-0 bg-cover bg-center rounded-b-[4rem]" style="background-image: url(/fotografia/images/dron1.jpg);"></div>
+        <div class="absolute inset-0 bg-black opacity-60 rounded-b-[4rem]"></div>
+        <!-- Contenido principal de la sección hero -->
+        <div class="container mx-auto px-6 relative z-10">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+                Capturamos Tus Momentos <br class="hidden md:block">Desde Todas las Perspectivas
+            </h1>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+                Ofrecemos servicios de fotografía profesional con cámaras terrestres y tomas aéreas impresionantes para eventos, propiedades y más.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">
+                <a href="#contacto" class="btn-primary">
+                    ¡Solicita un Presupuesto!
+                </a>
+                <a href="#portafolio" class="btn-secondary">
+                    Ver Portafolio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="py-16 md:py-24 bg-white rounded-t-[4rem] shadow-2xl -mt-16 relative z-10">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-primary-dark">Nuestros Servicios</h2>
+            <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
+                Con equipos de última generación y una visión artística, ofrecemos una gama completa de servicios fotográficos.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Servicio 1: Fotografía Terrestre -->
+                <div class="service-card">
+                    <!-- Placeholder de imagen -->
+                    <img src="/fotografia/images/retrato.jpg" alt="Icono Cámara Terrestre" class="mx-auto mb-6 w-24 h-24 rounded-full p-4 bg-secondary-gold bg-opacity-20">
+                    <h3 class="text-2xl font-semibold mb-3 text-primary-dark">Fotografía con Cámara Normal</h3>
+                    <p class="text-gray-700">
+                        Eventos, retratos, productos, bienes raíces y mucho más. Capturamos la esencia de cada momento con detalle y profesionalismo.
+                    </p>
+                </div>
+
+                <!-- Servicio 2: Fotografía Aérea -->
+                <div class="service-card">
+                    <!-- Placeholder de imagen -->
+                    <img src="/fotografia/images/dron1.jpg" alt="Icono Drone" class="mx-auto mb-6 w-24 h-24 rounded-full p-4 bg-secondary-gold bg-opacity-20">
+                    <h3 class="text-2xl font-semibold mb-3 text-primary-dark">Tomas Aéreas con Drone</h3>
+                    <p class="text-gray-700">
+                        Vistas espectaculares para inspecciones, eventos al aire libre, publicidad inmobiliaria y seguimiento de proyectos.
+                    </p>
+                </div>
+
+                <!-- Servicio 3: Edición y Post-producción -->
+                <div class="service-card">
+                    <!-- Placeholder de imagen -->
+                    <img src="/fotografia/images/retrato5.jpg" alt="Icono Edición" class="mx-auto mb-6 w-24 h-24 rounded-full p-4 bg-secondary-gold bg-opacity-20">
+                    <h3 class="text-2xl font-semibold mb-3 text-primary-dark">Edición y Retoque Avanzado</h3>
+                    <p class="text-gray-700">
+                        Cada imagen pasa por un meticuloso proceso de edición para asegurar la máxima calidad y un acabado impecable.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Portafolio -->
+    <section id="portafolio" class="py-16 md:py-24 bg-light-bg">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-primary-dark">Nuestro Portafolio</h2>
+            <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
+                Explora una selección de nuestros trabajos más destacados, tanto terrestres como aéreos.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Ejemplo de Imagen de Portafolio 1 (Terrestre) -->
+                <div class="relative group rounded-2xl overflow-hidden shadow-lg">
+                    <img src="/fotografia/images/retrato2.jpg" class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-300 ease-in-out">
+                    <div class="absolute inset-0 bg-primary-dark bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                        <p class="text-white text-xl font-semibold">Evento Social</p>
+                    </div>
+                </div>
+                <!-- Ejemplo de Imagen de Portafolio 2 (Aérea) -->
+                <div class="relative group rounded-2xl overflow-hidden shadow-lg">
+                    <img src="/fotografia/images/dron2.jpg" class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-300 ease-in-out">
+                    <div class="absolute inset-0 bg-primary-dark bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                        <p class="text-white text-xl font-semibold">Propiedad Residencial</p>
+                    </div>
+                </div>
+                <!-- Ejemplo de Imagen de Portafolio 3 (Terrestre) -->
+                <div class="relative group rounded-2xl overflow-hidden shadow-lg">
+                    <img src="/fotografia/images/retrato4.jpg" class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-300 ease-in-out">
+                    <div class="absolute inset-0 bg-primary-dark bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                        <p class="text-white text-xl font-semibold">Retrato Personal</p>
+                    </div>
+                </div>
+                <!-- Ejemplo de Imagen de Portafolio 4 (Aérea) -->
+                <div class="relative group rounded-2xl overflow-hidden shadow-lg">
+                    <img src="/fotografia/images/dron3.jpg" class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-300 ease-in-out">
+                    <div class="absolute inset-0 bg-primary-dark bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                        <p class="text-white text-xl font-semibold">Progreso de Obra</p>
+                    </div>
+                </div>
+                <!-- Ejemplo de Imagen de Portafolio 5 (Terrestre) -->
+                <div class="relative group rounded-2xl overflow-hidden shadow-lg">
+                    <img src="/fotografia/images/retrato1.jpg" alt="Fotografía Terrestre" class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-300 ease-in-out">
+                    <div class="absolute inset-0 bg-primary-dark bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                        <p class="text-white text-xl font-semibold">Retrato Familiar</p>
+                    </div>
+                </div>
+                <!-- Ejemplo de Imagen de Portafolio 6 (Aérea) -->
+                <div class="relative group rounded-2xl overflow-hidden shadow-lg">
+                    <img src="/fotografia/images/dron1.jpg" alt="Fotografía Aérea" class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-300 ease-in-out">
+                    <div class="absolute inset-0 bg-primary-dark bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                        <p class="text-white text-xl font-semibold">Paisaje Natural</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="py-16 md:py-24 bg-white rounded-t-[4rem] shadow-2xl relative z-10">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-primary-dark">Contáctanos</h2>
+            <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
+                ¿Listo para capturar tus momentos o proyectos desde una nueva perspectiva? ¡Envíanos un mensaje!
+            </p>
+
+            <div class="max-w-xl mx-auto bg-light-bg p-8 rounded-2xl shadow-xl">
+                <form action="#" method="POST" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-left text-sm font-medium text-gray-700">Nombre Completo</label>
+                        <input type="text" id="name" name="name" required class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-secondary-gold focus:border-secondary-gold sm:text-sm">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-left text-sm font-medium text-gray-700">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" required class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-secondary-gold focus:border-secondary-gold sm:text-sm">
+                    </div>
+                    <div>
+                        <label for="service" class="block text-left text-sm font-medium text-gray-700">Tipo de Servicio Interesado</label>
+                        <select id="service" name="service" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-secondary-gold focus:border-secondary-gold sm:text-sm">
+                            <option value="">Selecciona un servicio</option>
+                            <option value="fotografia-normal">Fotografía con Cámara Normal</option>
+                            <option value="tomas-aereas">Tomas Aéreas (Drone)</option>
+                            <option value="ambos">Ambos</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-left text-sm font-medium text-gray-700">Tu Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-secondary-gold focus:border-secondary-gold sm:text-sm"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn-primary w-full">
+                            Enviar Mensaje
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer class="bg-primary-dark text-white py-8 mt-12 rounded-t-xl">
+        <div class="container mx-auto px-6 text-center text-sm">
+            <p>&copy; 2025 MCLICK Studio. Todos los derechos reservados.</p>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="text-gray-400 hover:text-white">Política de Privacidad</a>
+                <a href="#" class="text-gray-400 hover:text-white">Términos de Servicio</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript para el menú móvil
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('mobile-menu-open');
+                mobileMenu.classList.toggle('mobile-menu-closed');
+            });
+
+            // Cerrar menú móvil al hacer clic en un enlace
+            const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.remove('mobile-menu-open');
+                    mobileMenu.classList.add('mobile-menu-closed');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
