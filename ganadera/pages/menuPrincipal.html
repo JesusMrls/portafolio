@@ -1,177 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ganadera local Ixhuatlan</title>
+    <!-- Incluyendo el archivo CSS externo -->
+    <link rel="stylesheet" href="styles_responsive_page.css">
+    <!-- Incluyendo Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
 
+<body class="bg-gray-100">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-        </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
-        </script>
-
-    <link rel="stylesheet" href="../css/styles_index.css">
-
-<body>
-    <header>
-
-        <a href="#" class="nombreE">Ganadera local Ixhuatlan</a>
-        <nav>
-            <ul>
-                <li><a href="#queSomos">¿Que Somos?</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#contactanos">Contactanos</a></li>
-                <li class="dropdown">
-                    <a href="../pages-login/login.php" class="dropbtn">Iniciar Sesión</a>
-                </li>
+    <!-- Navegación -->
+    <header class="bg-white p-4 flex justify-between items-center fixed top-0 left-0 w-full z-10 navbar-shadow">
+        <a href="#" class="text-xl font-bold text-gray-800">Ganadera local Ixhuatlan</a>
+        <nav class="hidden md:flex space-x-4 items-center">
+            <ul class="flex space-x-4">
+                <li><a href="#queSomos" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">¿Qué Somos?</a></li>
+                <li><a href="#servicios" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Servicios</a></li>
+                <li><a href="#contactanos" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Contáctanos</a></li>
             </ul>
+          
         </nav>
+
+        <!-- Botón de menú para móviles -->
+        <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
     </header>
 
-    <!--seccion de noticias-->
-    <section id="noticias">
-        <div class="card">
-            <h4 class="tituloCard3">NOTICIAS RECIENTES</h4>
-            <p class="card-text"></p>
-
-
-            <div class="card-group" id="cardGroupS">
-                <!-- tarjetas existentes -->
-                <div class="card">
-                    <img src="../images/asamblea.jpeg" class="card-img-top mx-auto d-block" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Asamblea general</h5>
-                        <p class="card-text"></p>
-                        <!--<p class="card-text"><small class="text-muted last-updated">Last updated 3 mins ago</small></p>-->
-
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="../images/ing.jpg" class="card-img-top mx-auto d-block" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Visita de SINIGA a las instalaciones</h5>
-                        <p class="card-text"></p>
-                        <!--<p class="card-text"><small class="text-muted last-updated">Last updated 3 mins ago</small></p>-->
-
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="../images/secre.jpg" class="card-img-top mx-auto d-block" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Presentacion de la nueva secretaria</h5>
-                        <p class="card-text"></p>
-                        <!--<p class="card-text"><small class="text-muted last-updated">Last updated 3 mins ago</small></p>-->
-
-                    </div>
-
-                </div>
-                <!-- Más tarjetas pueden ir aquí -->
-            </div>
-
-
-    </section>
-
-
-
-    <section id="queSomos">
-        <div class="card">
-            <h3 class="tituloCard1">¿Qué somos?</h3>
-            <p class="card-text">La Asociación Ganadera Local de Ixhuatlán del Sureste es una organización que agrupa y
-                representa a los productores pecuarios del municipio y sus alrededores, con el propósito de fortalecer
-                el desarrollo del sector ganadero a través de la unión, la gestión y el trabajo colaborativo.
-
-                Nuestra asociación fomenta prácticas de producción responsables, la capacitación de los socios y el
-                acceso a programas de apoyo que impulsen la productividad, competitividad y bienestar de los ganaderos.
-                Además, se trabaja en la protección del patrimonio pecuario, la mejora genética, el cuidado de la
-                sanidad animal y la gestión de recursos para beneficio de todos los agremiados.
-
-                Con una sólida tradición en el campo ganadero, la Asociación es un punto de encuentro donde se
-                fortalecen los lazos de cooperación y se busca la mejora continua, contribuyendo al desarrollo económico
-                y social de Ixhuatlán del Sureste y de la región..</p>
-            <img src="../images/ixhuatlan.png" class="img-ixhuatlan" alt="...">
-        </div>
-    </section>
-
-    <!--seccion de Servicios-->
-    <section id="servicios">
-        <div class="card">
-            <h3 class="tituloCard2"><br><br><br>SERVICIOS. </h3>
-            <div class="card-group" id="cardGroup">
-                <!-- tarjetas existentes -->
-                <div class="card" id="card1">
-                    <img id="imagen-card1" src="../images/alambre.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="titulo_renta_de_salon">Venta de alambre de púas</h5>
-                        <p class="card_text_renta_del_salon">Contamos con insumos de calidad para el trabajo en el
-                            campo, facilitando a los productores el acceso a materiales necesarios para el cuidado y
-                            delimitación de sus terrenos.</p>
-                        <p class="card_text"><small class="text-muted last-updated">Last updated 3 mins ago</small></p>
-                    </div>
-                </div>
-                <div class="card" id="card2">
-                    <img src="../images/boda.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="titulo_bodas">Renta de salon para Bodas</h5>
-                        <p class="card_text_bodas">Disponemos de un espacio amplio y acondicionado para la realización
-                            de reuniones, cursos, celebraciones y todo tipo de eventos sociales o empresariales,
-                            ofreciendo comodidad y accesibilidad en el municipio.</p>
-                        <p class="card_text"><small class="text-muted last-updated">Last updated 3 mins ago</small></p>
-                    </div>
-                </div>
-                <div class="card" id="card3">
-                    <img src="../images/factura.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="titulo_celebraciones_xv">Facturación</h5>
-                        <p class="card_text_celebraciones">Brindamos atención administrativa para la correcta emisión de
-                            facturas, facilitando a socios y clientes la formalidad en sus operaciones comerciales.
-                        </p>
-                        <p class="card_text"><small class="text-muted last-updated">Last updated 3 mins ago</small></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div id="contactanos" class="card">
-        <h3 class="tituloCard3">Contáctanos</h3>
-        <div class="card-text">
-            <div class="sub-direccion">
-                <img src="../icons/people.svg" alt="Icono de personas" class="icono-address">
-                <span class="text-direccion">Dirección:</span>
-            </div>
-            <div class="sub-numero">
-                <img src="../icons/device-mobile.svg" alt="Icono de personas" class="icono-contact">
-                <span class="text-numero">Número de Contacto:</span>
-            </div>
-            <div class="sub-codigoPostal">
-                <img src="../icons/codescan.svg" alt="Icono de personas" class="icono-codePostal">
-                <span class="text-codigoPostal">Código Postal:</span>
-            </div>
-            <div class="sub-correo">
-                <img src="../icons/mail.svg" alt="Icono de personas" class="icono-mail">
-                <span class="text-correo">Correo(s):</span>
-                
-            </div>
-
-        </div>
+    <!-- Menú desplegable para móviles -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white mt-16 py-4 fixed top-0 left-0 w-full z-10 transition-transform transform -translate-y-full">
+        <a href="#queSomos" class="block py-2 px-4 text-gray-600 hover:bg-gray-200">¿Qué Somos?</a>
+        <a href="#servicios" class="block py-2 px-4 text-gray-600 hover:bg-gray-200">Servicios</a>
+        <a href="#contactanos" class="block py-2 px-4 text-gray-600 hover:bg-gray-200">Contáctanos</a>
+        <a href="../pages-login/login.php" class="block py-2 px-4 text-gray-600 hover:bg-gray-200">Iniciar Sesión</a>
     </div>
 
-    <footer>
-        <p>© 2025 Todos los derechos reservados.</p>
+    <main class="pt-20">
+        <!-- Sección de Noticias -->
+        <section id="noticias" class="container mx-auto p-4 md:p-8">
+            <div class="bg-white rounded-xl shadow-lg p-6 md:p-8">
+                <h4 class="text-2xl font-bold mb-4">NOTICIAS RECIENTES</h4>
+                <div class="card-group">
+                    <!-- Tarjetas de noticias -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <img src="https://placehold.co/400x250/C6C6C6/000000?text=Asamblea+general" alt="Asamblea general" class="w-full h-auto object-cover">
+                        <div class="p-4">
+                            <h5 class="font-bold text-lg mb-2">Asamblea general</h5>
+                            <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, iusto.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <img src="https://placehold.co/400x250/C6C6C6/000000?text=Visita+de+SINIGA" alt="Visita de SINIGA a las instalaciones" class="w-full h-auto object-cover">
+                        <div class="p-4">
+                            <h5 class="font-bold text-lg mb-2">Visita de SINIGA a las instalaciones</h5>
+                            <p class="text-sm text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, debitis.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <img src="https://placehold.co/400x250/C6C6C6/000000?text=Nueva+secretaria" alt="Presentación de la nueva secretaria" class="w-full h-auto object-cover">
+                        <div class="p-4">
+                            <h5 class="font-bold text-lg mb-2">Presentación de la nueva secretaria</h5>
+                            <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, enim.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección ¿Qué somos? -->
+        <section id="queSomos" class="container mx-auto p-4 md:p-8">
+            <div class="bg-white rounded-xl shadow-lg p-6 md:p-8">
+                <h3 class="text-2xl font-bold mb-4">¿Qué somos?</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">La Asociación Ganadera Local de Ixhuatlán del Sureste es una organización que agrupa y
+                    representa a los productores pecuarios del municipio y sus alrededores, con el propósito de fortalecer
+                    el desarrollo del sector ganadero a través de la unión, la gestión y el trabajo colaborativo.
+                    Nuestra asociación fomenta prácticas de producción responsables, la capacitación de los socios y el
+                    acceso a programas de apoyo que impulsen la productividad, competitividad y bienestar de los ganaderos.
+                    Además, se trabaja en la protección del patrimonio pecuario, la mejora genética, el cuidado de la
+                    sanidad animal y la gestión de recursos para beneficio de todos los agremiados.
+                    Con una sólida tradición en el campo ganadero, la Asociación es un punto de encuentro donde se
+                    fortalecen los lazos de cooperación y se busca la mejora continua, contribuyendo al desarrollo económico
+                    y social de Ixhuatlán del Sureste y de la región.</p>
+                <img src="https://placehold.co/800x400/C6C6C6/000000?text=Imagen+de+Ixhuatlan" alt="Imagen de Ixhuatlan" class="img-ixhuatlan">
+            </div>
+        </section>
+
+        <!-- Sección de Servicios -->
+        <section id="servicios" class="container mx-auto p-4 md:p-8">
+            <div class="bg-white rounded-xl shadow-lg p-6 md:p-8">
+                <h3 class="text-2xl font-bold mb-4">SERVICIOS</h3>
+                <div class="card-group">
+                    <!-- Tarjetas de servicios -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <img src="https://placehold.co/400x250/C6C6C6/000000?text=Venta+de+alambre" alt="Venta de alambre de púas" class="w-full h-auto object-cover">
+                        <div class="p-4">
+                            <h5 class="font-bold text-lg mb-2">Venta de alambre de púas</h5>
+                            <p class="text-sm text-gray-600">Contamos con insumos de calidad para el trabajo en el
+                                campo, facilitando a los productores el acceso a materiales necesarios para el cuidado y
+                                delimitación de sus terrenos.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <img src="https://placehold.co/400x250/C6C6C6/000000?text=Renta+de+salon" alt="Renta de salón para eventos" class="w-full h-auto object-cover">
+                        <div class="p-4">
+                            <h5 class="font-bold text-lg mb-2">Renta de salón para eventos</h5>
+                            <p class="text-sm text-gray-600">Disponemos de un espacio amplio y acondicionado para la realización
+                                de reuniones, cursos, celebraciones y todo tipo de eventos sociales o empresariales,
+                                ofreciendo comodidad y accesibilidad en el municipio.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <img src="https://placehold.co/400x250/C6C6C6/000000?text=Facturacion" alt="Facturación" class="w-full h-auto object-cover">
+                        <div class="p-4">
+                            <h5 class="font-bold text-lg mb-2">Facturación</h5>
+                            <p class="text-sm text-gray-600">Brindamos atención administrativa para la correcta emisión de
+                                facturas, facilitando a socios y clientes la formalidad en sus operaciones comerciales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Contáctanos -->
+        <section id="contactanos" class="container mx-auto p-4 md:p-8">
+            <div class="bg-white rounded-xl shadow-lg p-6 md:p-8">
+                <h3 class="text-2xl font-bold text-center mb-6">Contáctanos</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
+                    <div class="flex items-center justify-center p-4 bg-gray-50 rounded-lg">
+                        <img src="https://www.svgrepo.com/show/503463/location.svg" alt="Dirección" class="w-6 h-6 mr-2">
+                        <span class="font-bold">Dirección:</span>
+                        <span class="ml-2">Calle 1, Colonia Centro</span>
+                    </div>
+                    <div class="flex items-center justify-center p-4 bg-gray-50 rounded-lg">
+                        <img src="https://www.svgrepo.com/show/503463/phone.svg" alt="Número de contacto" class="w-6 h-6 mr-2">
+                        <span class="font-bold">Número de Contacto:</span>
+                        <span class="ml-2">+52 123 456 7890</span>
+                    </div>
+                    <div class="flex items-center justify-center p-4 bg-gray-50 rounded-lg">
+                        <img src="https://www.svgrepo.com/show/503463/mail.svg" alt="Correo electrónico" class="w-6 h-6 mr-2">
+                        <span class="font-bold">Correo(s):</span>
+                        <span class="ml-2">contacto@ganadera.mx</span>
+                    </div>
+                    <div class="flex items-center justify-center p-4 bg-gray-50 rounded-lg">
+                        <img src="https://www.svgrepo.com/show/503463/postal-code.svg" alt="Código Postal" class="w-6 h-6 mr-2">
+                        <span class="font-bold">Código Postal:</span>
+                        <span class="ml-2">96170</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-white text-center py-4">
+        <p>&copy; 2025 Todos los derechos reservados.</p>
     </footer>
-    <script src="../js/actions.js"></script>
-    <script src="../js/editar_cards.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-        </script>
+
+    <script>
+        // Script para el menú de navegación móvil
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('transform');
+            mobileMenu.classList.toggle('-translate-y-full');
+        });
+
+        // Ocultar el menú móvil cuando se hace clic en un enlace
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.add('transform');
+                mobileMenu.classList.add('-translate-y-full');
+            });
+        });
+    </script>
 </body>
 
 </html>
